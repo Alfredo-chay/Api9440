@@ -1,0 +1,21 @@
+@Api9440_HostAddress = http://localhost:5177
+
+# Test endpoint de estadísticas de correos
+POST {{Api9440_HostAddress}}/usuarios/correos/estadisticas
+Content-Type: application/json
+
+{
+  "correos": [
+    "ana@gmail.com",
+    "pedro@yahoo.com",
+    "luis@gmail.com",
+    "sofia@hotmail.com"
+  ]
+}
+
+###
+
+GET {{Api9440_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
